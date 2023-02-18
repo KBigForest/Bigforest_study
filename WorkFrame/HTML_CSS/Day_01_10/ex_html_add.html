@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY ADD</title>
+    <script type="text/javascript">
+        function doSomething(){
+                let a = document.getElementById('inputA').value; //input태그 객체에 현재 value속성을 읽어오고 저장
+                let b = document.getElementById('inputB').value;
+                
+                //계산결과를 HTML내에 추가하기 위해 getElementByID(ID이름).innerHTML으로 해당값 저장 
+                document.getElementById("valueA").innerHTML = a;
+                document.getElementById("valueB").innerHTML = b;
+                document.getElementById("valueC").innerHTML = Number(a) + Number(b);
+        }
+        </script>
+    </head>
+    <body>
+        <label for="inputA">a</label>
+        <input id="inputA" value=1 onkeyup="doSomething()">
+        <label for="inputB">b</label>
+        <input id="inputB" value=2 onkeyup="doSomething()">
+        <input type="button" value="계산"  onclick="calc()"><br>
+        <p><span id="valueA">2</span> + <span id="valueB">4</span> = <span id="valueC">6</span>입니다.</p>     
+    </body>
+    
+</html>

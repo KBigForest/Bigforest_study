@@ -1,0 +1,46 @@
+<!-- ==========================================================
+Javascript 언어
+- 객체지향언어
+- 스크립트 언어
+- HTML 태그를 직접 제어 가능 -> DOM(Document Object Model)
+=============================================================== -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MYWEB</title>
+        <!-- 내부 스크립트 코드 -->
+        <script>
+            //변수 선어
+            var msg="Hello javascript";
+            //print(msg)->진짜 프린트로 들어감
+            console.log("Hello JS")
+            console.log(msg)
+            var msg="좋은 사람";
+            console.log(msg)
+        </script>
+    </head>
+    <body>
+        <!-- 내부스크립트 코드 -->
+        <script>
+            document.write("Loading...")
+        </script>
+        <!-- 내부스크립트 코드 -->
+        <script>
+            var msg="반갑다 javascript";
+            console.log("Good Luck Happy Day")
+            console.log(msg)
+        </script>
+        <h3> Good Luck 2023 :)</h3>
+        오늘 건강하고 행복한 하루되세요!<br/>
+        <button>클릭하세요
+
+        </button>
+        <script>
+            const button = document.querySelector('botton');
+            button.onclick = function(){
+                let name = prompt('what is your name?');
+                alert('Hello '+ name + ',')
+            }
+        </script>
+    </body>
+</html>

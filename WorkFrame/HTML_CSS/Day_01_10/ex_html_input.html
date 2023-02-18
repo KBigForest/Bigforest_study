@@ -1,0 +1,62 @@
+<!-- HTML태그 - 입력 관련 ==================================================
+- 사용자로부터 입력을 받을 수 있는 태그
+- 입력 데이터 ==> 서버(Server) 전송
+* <form> ~ </form> : 서버(Server) 전송과 관련된 코드
+    - 전송관련 속성
+        * action : 데이터 처리 URL
+        * method : 입력 데이터 서버 전달방식(GET, POST)
+* 사용자로부터 입력을 받을 수 있는 태그
+*<input type='입력의 종류' 
+        name='' 
+        value='사용자에게 보여지는 값' 
+        on이벤트이름='javascript CODE'>
+===========================================================================-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MYWEB</title>
+    </head>
+    <body>
+        <h3> 다양한 입력 태그 살펴보기</h3>
+        <h4>텍스트 입력</h4>
+        성별입력 : 
+        <input type="text" name="gender" id="gen"><br>
+        <!-- passward 입력 : -->
+        <h4>패스워드 입력</h4>
+        비밀번호 입력 : <br>
+        <input type="text" name="password" id="pw"placeholder="영어, 숫자, 8자리"><br>
+        <!-- passward 입력 : -->
+        <h4>라디오 버튼 입력</h4>
+        혈액형 선택 : <br>
+        <input type="radio" name="blood" value='A' checked>A형
+        <input type="radio" name="blood" value='B'>B형
+        <input type="radio" name="blood" value='O'>O형
+        <input type="radio" name="blood" value='AB'>AB형
+    
+        <h4>체크 박스 버튼 입력 : 여러 개 선택</h4> 
+        취미선택 <br>
+        <input type="checkbox" name="hobby" value='등산'>등산
+        <input type="checkbox" name="hobby" value='댄스'>댄스
+        <input type="checkbox" name="hobby" value='잠자기' disabled>잠자기
+        <input type="checkbox" name="hobby" value='수영'>수영
+        <input type="checkbox" name="hobby" value='넷플릭스'>넷플릭스
+        <input type="checkbox" name="hobby" value="기타사항">기타사항
+            <br>
+            <textarea name="hobby" cols="50" rows="10"></textarea>        
+        <h4>텍스트 버튼 입력 : 긴 글자 문장 입력</h4>
+        이외사항 : <br>
+        <textarea name="message" cols="50" rows="20"></textarea>
+
+        <h4>버튼 입력 </h4>
+        삭제결정 : <br>
+        <!-- 속성on이벤트명 = 'EVENT Handler' -->
+        <input type="button" value="delete" name="delBTN" onclick="console.log('클릭')">
+        <button name="noBTN" onclick="alert('아니요')">NOPE</button>
+
+        <h4>버튼 입력</h4>
+        전송결정:
+        <input type="submit" name="send" value="서버로 전송">
+
+
+    </body>
+</html>

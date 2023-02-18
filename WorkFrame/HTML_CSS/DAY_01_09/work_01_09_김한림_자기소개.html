@@ -1,0 +1,140 @@
+<!-- 
+자기소개 페이지 만들기
+BIGFOREST가 사는 세상
+#인적사항
+이름 
+사진
+출생
+학교
+취미
+
+#연락처
+인스타
+전화번호
+간단한 자기소개
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team김한림 포트폴리오</title>
+        <style>
+            h1{
+                background-color: green;
+            }
+            #info{
+                background-color:beige;
+            }
+            #fromhl{
+                background-color:lightblue;
+                font-size: 50pt;
+            }
+            span{
+                color:lightgreen;
+            }   
+            #experience{
+                color:lightgray;
+                font-weight: lighter;
+            }
+            table{
+                background-color: red;
+            }
+        </style>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">       
+                <div class="col-9">
+                    <h1>BIGFOREST's </h1>
+                    <p id="fromhl">한림에서 온 <big><b>한림</b></big></p><br/>
+                    <p>
+                        <ul id="experience">
+                            <li>경북대학교 무역물류동아리 KITS 활동</li>
+                            <ul>
+                                <li>22년 1학기 회장직</li>
+                                <li>기업방문(물류기업 새아로지스)</li>
+                                <li>현직자 초청 수출아이템발굴대회</li>
+                                <li>코트라, 사모펀드, 한국무역협회 연사 초청강연 진행</li>
+                                <li>각종 학술대회 진행</li>
+                            </ul><br>
+                            <li>공모전 수상 경력</li>
+                            <ul>
+                                <li>공익광고협의체 공모전 장려상</li>
+                                <li>대구경북무역상사중재대회 대상</li>
+                                <li>직무체험공모전 금상</li>
+                                <li>포스코인터내셔널 신사업 공모전 본선</li>
+                            </ul><br>
+                            <li>근무경력</li>                            
+                            <ul>
+                                <li>제주 더마파크 카트장</li>
+                                <li>gs편의점, cu편의점</li>
+                                <li>한국장학재단</li>
+                                <li>롯데시네마 드리미</li>                            
+                            </ul><br>
+                            <li>자격증</li>
+                            <ul>
+                                <li>물류관리사</li>
+                                <li>유통관리사 2급</li>
+                                <li>한능검 1급</li>
+                        </ul>
+                    </p>
+                    <p>안녕하세요 항상 좋은 사람이 되고자 노력하는 김한림입니다. 
+                        제 이름이 가진 <span>큰 숲</span>이라는 의미처럼 많은 사람을 포용하는 숲같은 사람이 되고 싶습니다.
+                        현재 제가 가진 꿈은 물류업계에서 수요와 물류 흐름을 근거로 물류데이터를 효율화시킬 수 있는 모듈을 만들고 싶습니다. 
+                        감사합니다.
+                    </p>
+                </div>
+        <!-- 사진올리기 -->
+                <div class="col-3">
+                    <img src="../image/증명사진.jpeg" class="img-fluid w-100">
+                </div>    
+            </div>
+        </div>
+        <hr/>
+        <div class="container">
+        <h3> 인적사항</h3>
+        <ul id="info">
+            <li> 이름 : 김한림</li>
+            <li> 나이 : 만 25세</li>
+            <li> 출생 : 1997년, 제주도 한림</li>
+            <li> 취미 : 풋살, 시사교양 유튜브</li> 
+            <!-- 리스트 넣어주기 -->
+            <pre>
+            <table border="1" width="100%">
+               <thead>
+                    <tr>
+                        <th>학교이름</th>
+                        <th>재학시기</th>
+                        <th>현황</th>
+                        <th>비고</th>
+                    </tr>
+               </thead>
+               <tbody>
+                <tr>
+                    <td>수원초등학교</td>
+                    <td>8 ~ 13살</td>    
+                    <td>졸업</td>    
+
+                </tr>
+                <tr>
+                    <td>한림중</td>
+                    <td>14살 ~ 16살</td>    
+                    <td>졸업</td>    
+                </tr>
+                <tr>
+                    <td>제주제일고</td>
+                    <td>17살 ~ 19살</td>    
+                    <td>졸업</td>    
+                </tr>
+                <tr>
+                    <td>경북대학교</td>
+                    <td>20살 ~ 27살</td>    
+                    <td>재학</td>    
+                </tr>
+               </tbody>
+            </table>
+            </pre>
+        </ul>
+        </div>
+    </body>
+</html>

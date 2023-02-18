@@ -1,0 +1,152 @@
+<!-- ==========================================================
+# 태그에 스타일 적용방법
+- 동일 태그명이 페이지에 많이 존재함
+- 식별 방법
+    >>> id : 페이지 1개만 존재
+    >>> class : 페이지에 여러개 존재
+                여러개 요소에 한번에 스타일 적용
+# CSS Selector ------------------------------------------------
+- <style> <~/style> 태그 사이에 페이지 요소 마다 스타일을 설정방식
+- 방법 (1) ID속성을 이용하는 방법
+       (2) CLASS속성을 이용하는 방법 
+       (3) Tag명을 이용하는 방법
+- 확장자 css인 파일로 저장
+ ==> 해당 스타일을 사용하는 HTML에서는 링크하여 적용
+ ==> <link>
+=============================================================== -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MYSERVER</title>
+        <style>
+            #newjins
+            {
+                background-color: blanchedalmond;
+            }
+            .sunmi
+            {
+                color: red;
+                font-size: x-large;
+            }
+        </style>
+    </head>
+    <body>
+        <h4> 지금 뭐 듣고 계세요</h4>
+        <p>
+            뉴진스의 HYPE BOY요.(둠칫- 둠칫-)
+            <pre id="newjins" class="girl">
+                
+                (1,2,3,4)
+                Baby, got me looking so crazy
+                빠져버리는 daydream
+                Got me feeling you
+                너도 말해줄래
+                누가 내게 뭐라든
+                남들과는 달라 넌
+                Maybe you could be the one
+                날 믿어봐 한번
+                I'm not looking for just fun
+                Maybe I could be the oneOh baby
+                예민하대 나 lately
+                너 없이는 매일 매일이 yeah
+                재미없어 어쩌지
+                I just want you
+                Call my phone right now
+                I just wanna hear you're mine
+                'Cause I know what you like boy
+                You're my chemical hype boy
+                내 지난날들은
+                눈 뜨면 잊는 꿈
+            </pre>
+            <pre class="girl">
+                Hype boy 너만 원해
+                Hype boy 내가 전해
+                And we can go high
+                말해봐 yeah
+                느껴봐 mm mm
+                Take him to the sky
+                You know I hype you boy
+                눈을 감아
+                말해봐 yeah
+                느껴봐 mm mm
+            </pre>
+            <pre>
+                Take him to the sky
+                You know I hype you boy
+                잠에 들려고 잠에 들려 해도
+                네 생각에 또 새벽 세 시 uh-oh
+                알려줄 거야 they can't have you no more
+                봐봐 여기 내 이름 써있다고
+                누가 내게 뭐라든
+                남들과는 달라 넌
+                Maybe you could be the one
+                날 믿어봐 한번
+                I'm not looking for just fun
+                Maybe I could be the one
+                Oh baby
+                예민하대 나 lately
+                너 없이는 매일 매일이 yeah
+                재미없어 어쩌지
+                I just want you
+                Call my phone right now
+                I just wanna hear you're mine
+                'Cause I know what you like boy
+                You're my chemical hype boy
+                내 지난날들은
+                눈 뜨면 잊는 꿈
+                Hype boy 너만 원해
+                Hype boy 내가 전해
+                And we can go high
+                말해봐 yeah
+                느껴봐 mm mm
+                Take him to the sky
+                You know I hype you boy
+                눈을 감아
+                말해봐 yeah
+                느껴봐 mm mm
+                Take him to the sky
+                You know I hype you boy
+            </pre>
+
+        </p>
+        <hr/>
+        <p>
+            <pre class="sunmi">
+
+                보라빛 밤 - 선미 -
+
+                내게 뭘 원하냬
+                그냥 말만 하래
+                하늘에 별도
+                따주겠대
+                다른 건 안 바래
+                이 밤만 원하네 
+                그대 손 잡고
+                안 놔줄래
+            </pre>
+            <pre class="sunmi">
+                보라빛 밤
+                I like it like it 
+                더 같이 있자
+                아직 이르잖아
+                We're like 
+                보라빛 밤
+                날 하늘 위로
+                터트려 볼래
+                이 밤 밤 밤 밤 밤
+                보라빛 밤
+            </pre>
+            <pre>
+                오 그대여
+                눈뜨면 다 사라져
+                엉망이 돼도
+                오 그대여
+                난 다시 또 이 밤을
+                기다릴게요
+            </pre>
+        </p>
+
+
+    </body>
+</html>
