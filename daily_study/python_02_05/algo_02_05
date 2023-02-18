@@ -1,0 +1,56 @@
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def addTwoNumbers(self, l1, l2):
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
+        
+        import numpy as np
+        x = []
+        y = []
+        l1= list(l1)
+        l2 =list(l2)
+        result_list = []
+        if len(l1) >= len(l2):
+            for i in range(0,len(l1)):
+                x.append(10**i)        
+            for i in range(0,len(l2)):
+                y.append(10**i)
+            for z in range(0,len(l1)-len(l2)):
+                y.append(0)
+                l2.append(0)
+            y = np.array(y)        
+            x = np.array(x)
+            result =(np.array(l1)) * x + (np.array(l2) * y)
+            result = result.sum()
+            result_list = list(map(int, str(result)))
+            result_list.reverse()
+            print(result_list)
+        elif len(l1) < len(l2):
+            for i in range(0,len(l1)):
+                x.append(10**i)     
+            for i in range(0,len(l2)):
+                y.append(10**i)
+            for z in range(0,len(l2)-len(l1)):
+                x.append(0)
+                l1.append(0)
+            x = np.array(x)   
+            y = np.array(y)        
+            result =(np.array(l1)) * x + (np.array(l2) * y)
+            result = result.sum()
+            result_list = list(map(int, str(result)))
+            result_list.reverse()
+            return result_list
+        result_list
+a = Solution()
+l1 = [3,2,1]
+l2 = [9,9,9,9]
+
+a.addTwoNumbers(l1, l2)
+#해당 문제는 node를 사용해서 푸는 문제임.. node list의 개념을 공부할것! 
