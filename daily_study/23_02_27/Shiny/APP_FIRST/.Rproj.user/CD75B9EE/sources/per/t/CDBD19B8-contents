@@ -1,0 +1,74 @@
+#
+# This is a Shiny web application. You can run the application by clicking
+# the 'Run App' button above.
+#
+# Find out more about building applications with Shiny here:
+#
+#    http://shiny.rstudio.com/
+#
+
+library(shiny)
+
+# Define UI for application that draws a histogram
+#ui <- fluidPage(
+
+    # Application title
+#    titlePanel("Old Faithful Geyser Data"),
+
+    # Sidebar with a slider input for number of bins 
+ #   sidebarLayout(
+  #      sidebarPanel(
+#            sliderInput("bins",
+#                        "Number of bins:",
+ #                       min = 1,
+  #                      max = 50,
+   #                     value = 30)
+    #    ),
+
+        # Show a plot of the generated distribution
+     #   mainPanel(
+      #     plotOutput("distPlot")
+       # )
+    #)
+#)
+ui <- fluidPage(
+  titlePanel('HIHI'),
+  imageOutput('IMG1'),
+  textOutput('txt'),
+  textOutput('value'),
+  verbatimTextOutput('code')
+  )
+# Define server logic required to draw a histogram
+# input front로부터 받은 데이터 output front로 보낼 데이터
+#server <- function(input, output) {
+
+#    output$distPlot <- renderPlot({
+        # generate bins based on input$bins from ui.R
+ #       x    <- faithful[, 2]
+#        bins <- seq(min(x), max(x), length.out = input$bins + 1)
+
+        # draw the histogram with the specified number of bins
+ #       hist(x, breaks = bins, col = 'darkgray', border = 'white',
+#             xlab = 'Waiting time to next eruption (in mins)',
+#             main = 'Histogram of waiting times')
+#    })
+#}
+
+server <- function(input, output, session){
+  output$IMG1 = renderImage(
+    {
+    
+      output$img1 <- renderImage(
+        list(src = './image/2023.png',
+             contentType = 'image/png',
+             alt = 'This is alternate text'))
+    },deleteFile = FALSE
+  )
+  output$txt = renderText('Hi:)')
+  output$value = renderText('HighHigh')
+  output$code = renderText({summary(1:5)})
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)
+summary(1:5)
