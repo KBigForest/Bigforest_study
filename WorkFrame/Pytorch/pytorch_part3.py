@@ -105,3 +105,5 @@ for i in range(num_epoch):
 import matplotlib.pyplot as plt
 plt.plot(loss_array)
 
+
+# %%
