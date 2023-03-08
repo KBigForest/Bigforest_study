@@ -5,7 +5,6 @@ count = []
 for _ in range(m):
     board.append(input())
 
-
 for a in range(m-7):
     for b in range(n-7):
         index1 = 0
