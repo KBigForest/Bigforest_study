@@ -47,57 +47,29 @@
 #         print(i)
 
 #정답
-# import sys
-
-# num = int(sys.stdin.readline())
-# stack = []
-# result = []
-# cnt = 1
-# flag = 1
-# for i in range(num):
-#     a = int(sys.stdin.readline())
-#     #
-#     while cnt <= a:
-#         stack.append(cnt)
-#         result.append('+')
-#         cnt += 1
-#     if stack[-1] == a:
-#         stack.pop()
-#         result.append('-')
-#     else:
-#         print('NO')
-#         flag = 0
-#         break
-# if flag == 1:
-#     for i in result:
-#         print(i)
-        
-
-
-
 import sys
-num = int(input())
-pop_num_list = []
-stack_arr = []
-result= []
-a_list = []
-flag = 0
-count = 1
-count_sum = 1
+
+num = int(sys.stdin.readline())
+stack = []
+result = []
+cnt = 1
+flag = 1
 for i in range(num):
-    a = int(input())
-    if count_sum <= a:
-        for j in range(count_sum,a+1):
-                stack_arr.append(j)
-                result.append('+')
-                count_sum = count + 1
-    if stack_arr[-1]== a:          
-        stack_arr.pop()
+    a = int(sys.stdin.readline())
+    #
+    while cnt <= a:
+        stack.append(cnt)
+        result.append('+')
+        cnt += 1
+    if stack[-1] == a:
+        stack.pop()
         result.append('-')
     else:
         print('NO')
-        flag = 1    
+        flag = 0
         break
-if flag == 0:
+if flag == 1:
     for i in result:
         print(i)
+        
+
