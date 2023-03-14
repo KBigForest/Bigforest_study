@@ -73,3 +73,13 @@ if flag == 1:
         print(i)
         
 
+
+
+
+
+
+# import sys
+
+# cnt = 1
+
+# while cnt <
