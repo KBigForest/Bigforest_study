@@ -7,4 +7,4 @@ num_list.sort()
 sum_value = 0
 for i in range(1,num+1):
     sum_value += sum(num_list[:i])
-print(sum_value)
+print(sum_value)    
